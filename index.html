@@ -13,12 +13,51 @@
             background-color: #f4f4f4;
         }
         header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
             background-color: white;
-            text-align: center;
-            padding: 20px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: white;
+            display: flex;
+            align-items: center;
         }
         header img {
-            max-width: 150px;
+            max-width: 100px;
+            margin-right: 20px;
+        }
+        .nav {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+        .nav a {
+            text-decoration: none;
+            color: #F14F4F;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .dashboard-button {
+            padding: 10px 20px;
+            background-color: #F14F4F;
+            color: white !important;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+            border: 2px solid #F14F4F;
+            text-align: center;
+            display: inline-block;
+        }
+        .dashboard-button:hover {
+            background-color: transparent;
+            color: #F14F4F !important;
+            border: none;
         }
         .hero {
             text-align: center;
@@ -49,14 +88,31 @@
             color: white;
         }
         .features {
+            text-align: center;
+            padding: 50px;
+            background-color: white;
+        }
+        .features h2 {
+            color: #F14F4F;
+        }
+        .feature-box-container {
             display: flex;
             justify-content: space-around;
-            padding: 50px;
-            background-color: #f4f4f4;
         }
         .feature-box {
             text-align: center;
             max-width: 300px;
+        }
+        .feature-box h2 {
+            color: black;
+        }
+        .company-intro {
+            text-align: center;
+            padding: 50px;
+            background-color: #ffffff;
+        }
+        .company-intro h2 {
+            color: #F14F4F;
         }
         .dashboard-preview {
             text-align: center;
@@ -74,31 +130,44 @@
 <body>
     <header>
         <img src="Logo.png" alt="MCC Logo">
+        <nav class="nav">
+            <a href="#about">About Us</a>
+            <a href="#dashboard">Our Product</a>
+            <a href="#contact">Contact Us</a>
+            <a href="https://lookerstudio.google.com/reporting/8300e989-fe28-42e2-a3c3-4399b864e4cc" class="dashboard-button">Access Dashboard</a>
+        </nav>
     </header>
-    <section class="features">
-        <div class="feature-box">
-            <h2>Accurate Data</h2>
-            <p>90% accuracy vs. 60-80% market benchmark.</p>
-        </div>
-        <div class="feature-box">
-            <h2>Actionable Insights</h2>
-            <p>Find the right stores, segment markets, and identify whitespace opportunities.</p>
-        </div>
-        <div class="feature-box">
-            <h2>Affordable Solutions</h2>
-            <p>Pay-as-you-use and Data-as-a-Service models improve ROI by 20%.</p>
-        </div>
+    <section class="company-intro" id="about" style="margin-top: 120px;">
+        <h2>About MCC</h2>
+        <p>At MCC, we are more than just a tech-driven market intelligence company — we are innovators transforming how businesses engage with Vietnam’s traditional retailers. Our team thrives on cutting-edge technology and a mission to empower our clients with actionable data that shapes where and how they grow.</p>
+    </section>
+    <section class="dashboard-preview" id="dashboard">
+        <h2>Interactive Dashboard Preview</h2>
+        <img src="dashboard-preview.png" alt="Dashboard Preview" width="80%">
     </section>
     <section class="hero">
         <h1>Unlock Data-Driven Growth</h1>
         <p>Empowering your business with accurate, actionable, and affordable retail insights.</p>
         <a href="https://lookerstudio.google.com/reporting/8300e989-fe28-42e2-a3c3-4399b864e4cc" class="cta-button">See the Dashboard in Action</a>
     </section>
-    <section class="dashboard-preview" id="dashboard">
-        <h2>Interactive Dashboard Preview</h2>
-        <img src="dashboard-preview.png" alt="Dashboard Preview" width="80%">
+    <section class="features" id="features">
+        <h2>Our Commitment</h2>
+        <div class="feature-box-container">
+            <div class="feature-box">
+                <h2>Accurate Data</h2>
+                <p>90% accuracy vs. 60-80% market benchmark.</p>
+            </div>
+            <div class="feature-box">
+                <h2>Actionable Insights</h2>
+                <p>Find the right stores, segment markets, and identify whitespace opportunities.</p>
+            </div>
+            <div class="feature-box">
+                <h2>Affordable Solutions</h2>
+                <p>Pay-as-you-use and Data-as-a-Service models improve ROI by 20%.</p>
+            </div>
+        </div>
     </section>
-    <section class="contact">
+    <section class="contact" id="contact">
         <h2>Contact Us</h2>
         <p>Email: mcc@mountain.vn | Phone: +84 914 589 409</p>
     </section>
