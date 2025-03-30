@@ -1,4 +1,4 @@
-html {
+canvas html {
     scroll-behavior: smooth;
 }
 body {
@@ -40,7 +40,7 @@ header img:hover {
 }
 .nav a {
     text-decoration: none;
-    color: #F14F4F;
+    color: #003DA5;
     font-size: 18px;
     font-weight: bold;
     position: relative;
@@ -53,7 +53,7 @@ header img:hover {
     height: 2px;
     bottom: -5px;
     left: 0;
-    background-color: #F14F4F;
+    background-color: #003DA5;
     transition: width 0.3s ease;
 }
 .nav a:not(.dashboard-button):hover:after {
@@ -61,25 +61,25 @@ header img:hover {
 }
 .dashboard-button {
     padding: 12px 25px;
-    background-color: #F14F4F;
-    color: white !important;
+    background-color: #FDB813;
+    color: #003DA5 !important;
     font-size: 16px;
     font-weight: bold;
     text-decoration: none;
     border-radius: 25px;
-    border: 2px solid #F14F4F;
+    border: 2px solid #FDB813;
     text-align: center;
     display: inline-block;
     transition: all 0.5s ease-out;
 }
 .dashboard-button:hover {
     background-color: transparent;
-    color: #F14F4F !important;
+    color: #FDB813 !important;
 }
 .hero {
     text-align: center;
     padding: 120px 20px 80px;
-    background: linear-gradient(135deg, #F14F4F 0%, #ff6b6b 100%);
+    background: linear-gradient(135deg, #003DA5 0%, #0056D2 100%);
     color: white;
     position: relative;
     overflow: hidden;
@@ -111,13 +111,13 @@ header img:hover {
     display: inline-block;
     margin-top: 20px;
     padding: 15px 30px;
-    background-color: #ffffff;
-    color: #F14F4F;
+    background-color: #FDB813;
+    color: #003DA5;
     font-size: 18px;
     font-weight: bold;
     text-decoration: none;
     border-radius: 25px;
-    border: 2px solid #F14F4F;
+    border: 2px solid #FDB813;
     transition: all 0.3s ease;
     cursor: pointer;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
@@ -126,14 +126,14 @@ header img:hover {
     z-index: 1;
 }
 .cta-button:hover {
-    background-color: #F14F4F;
+    background-color: #003DA5;
     color: white;
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(241, 79, 79, 0.2);
+    box-shadow: 0 5px 15px rgba(0, 61, 165, 0.2);
 }
 .cta-button:active {
     transform: translateY(1px);
-    box-shadow: 0 2px 5px rgba(241, 79, 79, 0.2);
+    box-shadow: 0 2px 5px rgba(0, 61, 165, 0.2);
 }
 .features {
     text-align: center;
@@ -141,7 +141,7 @@ header img:hover {
     background-color: white;
 }
 .features h2 {
-    color: #F14F4F;
+    color: #003DA5;
     font-size: 2.5em;
     margin-bottom: 50px;
 }
@@ -167,7 +167,7 @@ header img:hover {
 }
 .feature-box i {
     font-size: 2.5em;
-    color: #F14F4F;
+    color: #FDB813;
     margin-bottom: 20px;
 }
 .feature-box h2 {
@@ -185,7 +185,7 @@ header img:hover {
     background-color: #ffffff;
 }
 .company-intro h2 {
-    color: #F14F4F;
+    color: #003DA5;
     font-size: 2.5em;
     margin-bottom: 30px;
 }
@@ -201,22 +201,22 @@ header img:hover {
     background-color: #f8f8f8;
 }
 .dashboard-preview h2 {
-    color: #F14F4F;
+    color: #003DA5;
     font-size: 2.5em;
     margin-bottom: 40px;
 }
-.dashboard-preview img {
+dashboard-preview img {
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
 }
-.dashboard-preview img:hover {
+dashboard-preview img:hover {
     transform: scale(1.02);
 }
 .contact {
     text-align: center;
     padding: 60px 30px;
-    background: linear-gradient(135deg, #F14F4F 0%, #ff6b6b 100%);
+    background: linear-gradient(135deg, #003DA5 0%, #0056D2 100%);
     color: white;
 }
 .contact h2 {
