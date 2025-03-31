@@ -61,20 +61,20 @@ header img:hover {
 }
 .dashboard-button {
     padding: 12px 25px;
-    background-color: #FDB813;
-    color: #003DA5 !important;
+    background-color: #003DA5;
+    color: #FDB813!important;
     font-size: 16px;
     font-weight: bold;
     text-decoration: none;
     border-radius: 25px;
-    border: 2px solid #FDB813;
+    border: 2px solid #003DA5;
     text-align: center;
     display: inline-block;
     transition: all 0.5s ease-out;
 }
 .dashboard-button:hover {
     background-color: transparent;
-    color: #FDB813 !important;
+    color: #003DA5 !important;
 }
 .hero {
     text-align: center;
